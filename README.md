@@ -48,7 +48,7 @@ You should now be able to configure AWS EC2 instances with Chef
 
 ### Applying Configuration
 Now you have knife configured with your Chef Server. Your `chef/` directory (or whatever you chose to name it) should look about like this:
-![Chef](http://imgur.com/a/mrvBf)
+![Chef](http://i.imgur.com/H9DuUns.png)
 Note: If you are using Git or any other version control, you will want to ignore your `.chef` directory, because it has private keys. You can do that by putting
 ```
 .chef
