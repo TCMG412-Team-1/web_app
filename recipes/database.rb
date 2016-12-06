@@ -4,8 +4,9 @@ mysql_client 'default' do
 end
 
 # DO NOT DELETE
-execute 'create_symlink_for_mysql' do
-  command "ln -s /var/run/mysql-default /var/run/mysqld"
+link '/var/run/mysql-default' do
+  to '/var/run/mysqld'
+  link_type :hard
 end
 
 # Configure the MySQL service.

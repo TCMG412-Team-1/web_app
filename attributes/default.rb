@@ -22,5 +22,5 @@ default['web_app']['repo_url'] = 'https://github.com/kevinskoglund/explore_calif
 default['web_app']['branch'] = 'master'
 default['web_app']['repo_path'] = "#{node['web_app']['document_root']}/#{node['web_app']['repo_name']}"
 
-
+default['web_app']['node_url'] = 'ec2-35-164-172-11.us-west-2.compute.amazonaws.com'
 
