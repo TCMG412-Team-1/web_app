@@ -16,14 +16,6 @@ directory node['web_app']['document_root'] do
   recursive true
 end
 
-# Write the home page.
-file "#{node['web_app']['document_root']}/index.html" do
-  content '<html>This is a placeholder</html>'
-  mode '0644'
-  owner node['web_app']['user']
-  group node['web_app']['group']
-end
-
 execute 'install_software_properties' do
   command "apt-get -y install python-software-properties"
 end
